@@ -25,7 +25,7 @@ nodes$title <- nodes$Label
 nodes$color.border <- "black"
 nodes$color.background <- pal3[nodes$Attribute]
 
-links$width <- links$Value*2
+# links$width <- links$Value*2
 links$color <- c("green", "purple", "black")
 
 visNetwork(nodes, links)
