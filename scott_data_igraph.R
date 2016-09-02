@@ -19,3 +19,7 @@ length(unique(nodes$id))
 unique(nodes$Attribute)
 nrow(links)
 nrow(unique(links[,c("source", "target")]))
+
+net1 <- graph_from_data_frame(d = links, vertices = nodes)
+
+plot(net1)
